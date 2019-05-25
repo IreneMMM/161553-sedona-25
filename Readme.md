@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ирина м](https://up.htmlacademy.ru/htmlcss/25/user/161553).
-* Наставник: [Мурат Баркинхоев](https://up.htmlacademy.ru/htmlcss/25/user/186857).
+* Наставник: [Наталья Налимова](https://up.htmlacademy.ru/htmlcss/25/user/16507).
 
 ---
 
