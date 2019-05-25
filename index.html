@@ -17,21 +17,25 @@
       </nav>
 
       <div class="main-header-logo">
-        <a><img src="img/sedona-logo.svg" width="102" height="84" alt="Sedona logo">
+        <a><img class="sedona-logo" src="img/sedona-logo.png" width="140" height="72" alt="Логотип сайта Седона">
         </a>
       </div>      
    </header>
    
-   <main>
-	  
+   <main>  
 	  <section class="main_page_photo">
-	  	  <img src="img/sedona-main_page_photo.svg" width="1000" height="400" alt="sedona-main_page_photo">
-	  </section>
-
+	  	  <img class="main-photo" src="img/main-photo-sedona.png" width="1200" height="800" alt="Фотография города Седона">
+        <img class="welcome-logo" src="img/welcome-logo-sedona.png" width="459" height="353" alt="Приветственный логитип города Седона">
       <h1 class="page__title">Седона &#8211; небольшой городок в Аризоне, заслуживающий большего!</h1>
-      <p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!<p>
-       
-      <section class="advantages">
+     </section>      
+
+     <p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!<p>
+
+      <section class="features">
+	  <h2 class="visually-hidden">Преимущества</h2>
+    <div class="features-photo">
+       <img class="feature-picture" src="img/feature-picture.png" width="800" height="256" alt="Настоящий городок">
+    </div>
       	<!--Здесь будут преимущества-->
       </section>
 
@@ -40,13 +44,51 @@
           <h2 class="search-form__title">Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button type="button">Найти гостиницу</button>
+
+    		  <form action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <h3>Поиск гостиницы в Седоне</h3>
+              <p>
+              <label>Дата заезда: 
+                <input type="text" name="date_in" placeholder="24 апреля 2017"> 
+              </label>
+              <img class="calendar" src="svg-sedona/calendar.svg" width="21" height="22" alt="Выбрать дату">
+              </p>
+              <p>
+              <label>Дата выезда: 
+                <input type="text" name="date_out" placeholder="4 июля 2017">
+              </label>
+              <img class="calendar" src="svg-sedona/calendar.svg" width="21" height="22" alt="Выбрать дату">
+              </p>
+              <p>
+              <label for="adults">Взрослые:</label>
+                <input class="btn-minus" type="button" value="-">
+                <input id="adults" type="number" name="adults" value="2">
+                <input class="btn-plus" type="button" value="+">
+            
+              </p>
+              <p>
+              <label for="children">Дети:</label>
+                <input class="btn-minus" type="button" value="-">
+                <input id="children" type="number" name="children" value="0">
+                <input class="btn-plus" type="button" value="+">
+             
+              </p>
+              <p>
+              <label>
+                <input type="submit" name="find" value="Найти">
+              </label>
+              </p>
+            </fieldset>
+    		  </form>
         </div>
       </section>
 
       <section class="map">
+	  <h2 class="visually-hidden">Карта города Седона</h2>
       	<!--Здесь будет карта-->
       </section> 
-        
+
    </main>
 
    <footer class="main-footer">
@@ -55,14 +97,28 @@
       </p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">Youtube</a></li>
+          <li>
+            <a class="social-button" href="#">
+            <img class="twitter" src="svg-sedona/twitter-icon.svg" width="17" height="15" alt="Седона в Твиттере">Twitter
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <img class="facebook" src="svg-sedona/facebook-icon.svg" width="12" height="22" alt="Седона в Фейсбуке">Facebook
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <img class="youtube" src="svg-sedona/youtube-icon.svg" width="20" height="16" alt="Седона в Ютубе">Youtube
+            </a>
+          </li>
         </ul>
       </div>
       <p class="footer-copyright">
         <b>Website by</b> 
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru">
+          <img class="footer-link" src="svg-sedona/logo-htmlacademy.svg" width="115" height="41" alt="Логитип HTML Академии">
+        </a>
       </p>
     </footer>  
 
