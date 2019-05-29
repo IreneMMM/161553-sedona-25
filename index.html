@@ -23,7 +23,7 @@
    
     <main>  
   	  <section class="main-page-photo">
-  	  	<img class="main-photo" src="img/main-photo-sedona.png" width="1200" height="800" alt="Фотография города Седона">
+  	  	<img class="main-photo" src="img/main-photo-sedona.jpg" width="1200" height="800" alt="Фотография города Седона">
         <img class="welcome-logo" src="img/welcome-logo-sedona.png" width="459" height="353" alt="Приветственный логитип города Седона">
         <h1 class="page-title">Седона &#8211; небольшой городок в Аризоне, заслуживающий большего!</h1>
       </section>      
@@ -31,11 +31,56 @@
       <p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!<p>
 
       <section class="features">
-    	  <h2 class="visually-hidden">Преимущества</h2>
-        <div class="features-photo">
-          <img class="feature-picture" src="img/features.png" width="800" height="256" alt="Настоящий городок">
-        </div>
-          	<!--Здесь будут преимущества-->
+    	<h2 class="visually-hidden">Преимущества</h2>
+
+    	<div class="features-list">
+    	  <ul class="features-list">
+    	  	<li class="features-item">
+    	  	  <h3>Настоящий городок</h3>
+    	  	  <p>№ 1</p>
+    	  	  <p>Седона - не аттракцион для туристов,<br/>там течет своя жизнь</p>
+    	  	  <img class="feature-picture" src="img/feature-1.jpg" width="800" height="256" alt="Настоящий городок">
+    	  	</li>
+    	  	  <ul class="bonus-list">
+    	  	  	<li class="bonus-item">
+    	  	  	  <img src="img/icon-house.svg" class="icon">
+    	  	      <h3>Жилье</h3>
+	    	  	  <p>Рекомендуем пожить в настоящем<br/>мотеле, всё как в кино!</p>
+    	  	  	</li>
+    	  	  	<li class="bonus-item">
+    	  	  	  <img src="img/icon-food.svg" class="icon">
+    	  	      <h3>Еда</h3>
+	    	  	  <p>Всегда заказывайте фирменный бургер,<br/>вы не разочаруетесь!</p>
+    	  	  	</li>
+    	  	  	<li class="bonus-item">
+    	  	  	  <img src="img/icon-present.svg" class="icon">
+    	  	      <h3>Сувениры</h3>
+	    	  	  <p>Не только китайского, но и местного<br/>производства!</p>
+    	  	  	</li>
+    	  	  </ul>	
+    	  	<li class="features-item">
+    	  	  <h3>Там есть мост дьявола</h3>
+    	  	  <p>№ 2</p>
+    	  	  <p>Да, по нему нужно пройти, если конечно<br/>вы осмелитесь</p>
+    	  	  <img class="feature-picture" src="img/feature-2.jpg" width="800" height="256" alt="Настоящий городок">
+    	  	</li>
+    	  	<li class="features-item">
+    	  	  <h3>Небольшая площадь</h3>
+    	  	  <p>№ 3</p>
+    	  	  <p>Все достопримечательности<br/>находятся очень близко</p>
+    	  	</li>
+    	  	<li class="features-item">
+    	  	  <h3>Красивая дорога</h3>
+    	  	  <p>№ 4</p>
+    	  	  <p>Ехать в Седону из Лас-Вегаса совсем<br/>не скучно!</p>
+    	  	</li>
+    	  	<li class="features-item">
+    	  	  <h3>Мало туристов</h3>
+    	  	  <p>№ 5</p>
+    	  	  <p>Большинство едет в Гранд Каньон<br/>и толпится там</p>
+    	  	</li>
+    	  </ul>	
+    	</div>
       </section>
 
       <section class="search-form">
@@ -44,7 +89,7 @@
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button type="button">Найти гостиницу</button>
 
-    		  <form action="https://echo.htmlacademy.ru" method="get">
+    	  <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
               <h3>Поиск гостиницы в Седоне</h3>
               <p>
@@ -59,35 +104,29 @@
               </label>
               <img class="calendar" src="img/calendar.svg" width="21" height="22" alt="Выбрать дату">
               </p>
-              <p>
-              <label for="adults">Взрослые:</label>
+              <p><label for="adults">Взрослые:</label>
                 <input class="btn-minus" type="button" value="-">
                 <input id="adults" type="number" name="adults" value="2">
                 <input class="btn-plus" type="button" value="+">
-            
               </p>
-              <p>
-              <label for="children">Дети:</label>
+              <p><label for="children">Дети:</label>
                 <input class="btn-minus" type="button" value="-">
                 <input id="children" type="number" name="children" value="0">
                 <input class="btn-plus" type="button" value="+">
-             
               </p>
-              <p>
-              <label>
+              <p><label>
                 <input type="submit" name="find" value="Найти">
               </label>
               </p>
             </fieldset>
-    		  </form>
+    	  </form>
         </div>
       </section>
 
       <section class="map">   
-	      <h2 class="visually-hidden">Карта города Седона</h2>
-      	<!--Здесь будет карта-->
+	    <h2 class="visually-hidden">Карта города Седона</h2>
+	    <img src="img/map.jpg" width="1200" height="594" alt="Карта города Седона">
       </section> 
-
     </main>
 
     <footer class="main-footer">
