@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -26,7 +29,7 @@
 	  <section class="hotels-filter">
 		<h2 class="visually-hidden">Фильтр гостиниц</h2>
 		<fieldset class="filter-option">Инфраструктура:
-		  <form method="post" action="#">
+		  <form class="hotel-checkbox" method="post" action="#">
             <input id="pool" type="checkbox" name="pool">
             <label for="pool">Бассейн</label>
             <input id="parking" type="checkbox" name="parking">
@@ -36,7 +39,7 @@
           </form>
         </fieldset>
         <fieldset class="filter-option">Тип жилья:
-		  <form method="post" action="#">
+		  <form class="hotel-checkbox" method="post" action="#">
             <input id="hotel" type="checkbox" name="pool">
             <label for="hotel">Гостиница</label>
             <input id="motel" type="checkbox" name="parking">
@@ -50,13 +53,25 @@
             <label><input class="min-price" type="text" placeholder="от 0"></label>
             <label><input class="max-price" type="text" placeholder="до 3000"></label> 
 	        <p><label><input type="range" multiple min="0" step="1" max="10" data-values="1 3000"></label></p>	
-	        <p><button type="submit">Показать</button></p> 
+	        <p><button class="show-btn" type="submit">Показать</button></p> 
           </form>
         </fieldset>      
 	  </section>
 
 	  <section class="catalog">
-		<h2 class="visually-hiden">Найденные гостиницы:</h2>
+		<h2 class="catalog-title">Найдено: <span class="hotels-amount">3</span></h2>
+		  <p class="sort-title">Сортировка:</p>
+		  <ul class="sort">
+		  	<li><a href="#">По цене</a></li>
+		  	<li><a href="#">По типу</a></li>
+		  	<li><a href="#">По рейтингу</a></li>
+		  </ul>
+
+		  <div class="direction-btn">
+		  	<button type="button" aria-label="По-возрастанию"></button>
+		  	<button type="button" aria-label="По-убыванию"></button>
+		  </div>
+
 		  <ul class="catalog-list">
 			<li class="catalog-item">
 			  <div class="catalog-item-image">
@@ -141,7 +156,7 @@
       <a href="#">#Visitsedona</a>
     </p>
     <div class="footer-social">
-      <ul>
+       <ul class="footer-social">
         <li>
           <a class="social-button" href="#">
           <img class="twitter" src="img/twitter-icon.svg" width="17" height="15" alt="Седона в Твиттере">Twitter
